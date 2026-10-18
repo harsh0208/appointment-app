@@ -1,7 +1,10 @@
 def cancel_appointment(status):
     if status == "booked":
         return "Cancelled"
-    return "Cannot cancel"
+    elif status == "cancelled":
+        return "Cannot cancel"
+    else:
+        return "Invalid appointment status"
 
 
 if __name__ == "__main__":

@@ -16,6 +16,10 @@ class TestCancellation(unittest.TestCase):
             "Cannot cancel"
         )
 
-
+    def test_unknown_status_is_rejected(self):
+        self.assertEqual(
+            cancel_appointment("unknown"),
+            "Invalid appointment status"
+        )
 if __name__ == "__main__":
     unittest.main()
