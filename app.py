@@ -9,3 +9,5 @@ def cancel_appointment(status):
 
 if __name__ == "__main__":
     print(cancel_appointment("booked"))
+
+# CI demonstration: automated testing through GitHub Actions
